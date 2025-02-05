@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HELIX HUNT</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">HELIX HUNT</h1>
+        <button id="about-button">About</button>
+        <div id="about-section" class="hidden">
+            <h2>About</h2>
+            <p>This game is designed to test your knowledge of DNA replication and transcription. It was created to make learning about genetics fun and interactive.</p>
+            <p>Creators: Nandipati Lakshmi Navya Sri, Balle Sudheer Naidu</p>
+        </div>
+        <div id="player-name-input-section">
+            <label for="player-name">Enter your name: </label>
+            <input type="text" id="player-name">
+            <button id="start-game">Start Game</button>
+        </div>
+        <div id="player-name-display" class="hidden"></div>
+        <div id="game-info" class="hidden">
+            <div id="game-mode"></div>
+            <div id="dna-sequence"></div>
+            <div id="timer"></div>
+        </div>
+        <div id="first-level" class="hidden">
+            <h2>First Level: Find the Complementary Strand</h2>
+            <input type="text" id="first-level-answer">
+            <button id="first-level-submit">Submit</button>
+            <div id="first-level-message"></div>
+        </div>
+        <div id="second-level" class="hidden">
+            <h2>Second Level: Identify Purines and Pyrimidines</h2>
+            <label for="purines-count">Purines: </label>
+            <input type="number" id="purines-count">
+            <label for="pyrimidines-count">Pyrimidines: </label>
+            <input type="number" id="pyrimidines-count">
+            <button id="second-level-submit">Submit</button>
+            <div id="second-level-message"></div>
+        </div>
+        <div id="third-level" class="hidden">
+            <h2>Third Level: Count the Hydrogen Bonds</h2>
+            <input type="number" id="third-level-answer">
+            <button id="third-level-submit">Submit</button>
+            <div id="third-level-message"></div>
+        </div>
+        <div id="fourth-level" class="hidden">
+            <h2>Fourth Level: Predict the Possible Amino Acid Sequence for Query Sequence</h2>
+            <input type="text" id="fourth-level-answer">
+            <button id="fourth-level-submit">Submit</button>
+            <div id="fourth-level-message"></div>
+        </div>
+        <button id="restart" class="hidden">Restart Game</button>
+        <h2>Successful Players</h2>
+        <ul id="successful-players"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
